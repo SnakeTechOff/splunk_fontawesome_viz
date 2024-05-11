@@ -1,0 +1,9 @@
+.splunk-fontawesome {
+    text-align: center;
+    font-weight: bold;
+    line-height: 140%;
+    white-space: nowrap;
+}
+.splunk-fontawesome i:after {
+    content: '\202F';
+}

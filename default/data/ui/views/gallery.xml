@@ -1,0 +1,151 @@
+<dashboard version="1.1">
+  <label>Viz Sample</label>
+  <row>
+    <panel>
+      <title>Default, Number only, Drilldown</title>
+      <viz type="splunk_fontawesome_viz.fontawesome_viz">
+        <search>
+          <query>| makeresults 
+| eval value="162,300"
+| table value</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">all</option>
+        <option name="refresh.display">progressbar</option>
+        <drilldown>
+          <link target="_blank">http://www.google.com?q=$row.value$</link>
+        </drilldown>
+      </viz>
+    </panel>
+    <panel>
+      <title>Icon, Number Formatting, Dynamic Icon, Dynamic Color</title>
+      <viz type="splunk_fontawesome_viz.fontawesome_viz">
+        <search>
+          <query>| makeresults 
+| eval value="3242.59", icon="credit-card", color="#f7bc38"
+| table value icon color</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">all</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.colorBy">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fillTarget">text</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixIcon">warning</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixStyle">solid</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.icon">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.precision">0</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.showOption">1</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.staticColor">#555</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.style">fix_style</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useColors">true</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Fill Background, Static Icon</title>
+      <viz type="splunk_fontawesome_viz.fontawesome_viz">
+        <search>
+          <query>| makeresults 
+| eval value=42, icon="comment", color="#f7bc38"
+| table value icon color</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">all</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.colorBy">static_color</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fillTarget">background</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixIcon">crosshairs</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixStyle">solid</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.icon">fix_icon</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.precision">0</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.showOption">1</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.staticColor">#d41f1f</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.style">fix_style</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useColors">true</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+    <panel>
+      <title>Fill Background, Icon Only</title>
+      <viz type="splunk_fontawesome_viz.fontawesome_viz">
+        <search>
+          <query>| makeresults 
+| eval icon="database"
+| table icon</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">all</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.colorBy">static_color</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fillTarget">background</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixIcon">warning</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixStyle">solid</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.icon">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.precision">0</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.showOption">1</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.staticColor">#1182f3</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.style">fix_style</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useColors">true</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Icon Style Solid</title>
+      <viz type="splunk_fontawesome_viz.fontawesome_viz">
+        <search>
+          <query>| makeresults 
+| eval value="solid", icon="hand-point-up", color="#f7bc38", style="solid"
+| table value icon color style</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">all</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.colorBy">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fillTarget">text</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixIcon">crosshairs</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixStyle">regular</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.icon">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.precision">0</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.showOption">1</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.staticColor">#d41f1f</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.style">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useColors">true</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+    <panel>
+      <title>Icon Style Regular</title>
+      <viz type="splunk_fontawesome_viz.fontawesome_viz">
+        <search>
+          <query>| makeresults 
+| eval value="regular", icon="hand-point-up", color="#118832", style="regular"
+| table value icon color style</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">all</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.colorBy">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fillTarget">text</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixIcon">warning</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.fixStyle">solid</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.icon">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.precision">0</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.showOption">1</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.staticColor">#118832</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.style">field_value</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useColors">true</option>
+        <option name="splunk_fontawesome_viz.fontawesome_viz.useThousandSeparator">true</option>
+      </viz>
+    </panel>
+  </row>
+</dashboard>

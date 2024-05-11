@@ -1,0 +1,8 @@
+<dashboard stylesheet="css/icons_available.css" version="1.2">
+  <label>Available Icons</label>
+  <row>
+    <panel id="long">
+        <html src="html/icons_available.html" />
+    </panel>
+  </row>
+</dashboard>

@@ -1,0 +1,59 @@
+@import "../fontawesome/css/all.min.css";
+@import "../bootstrap/css/bootstrap-grid.min.css";
+@import "../bootstrap/css/bootstrap-utilities.min.css";
+/* @import url('../fontawesome/css/solid.css'); */
+
+.list{
+    list-style-type:none
+}
+
+section#icons-list {
+    box-sizing: border-box;
+     /* color: rgb(73, 80, 87); */
+     display: block;
+     font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 16px;
+     line-height: 18.4px;
+     text-size-adjust: 100%;
+     width: 100%;
+     -webkit-box-direction: normal;
+}
+
+.hover-bg-white:hover,.hover-bg-white:focus{
+    background-color:#fff
+}
+
+.color-inherit{
+    color:inherit
+}
+
+.hover-bg-white:hover,.hover-bg-white:focus{
+    background-color:#fff
+}
+
+.hover-bg-blue:focus,.hover-bg-blue:hover{
+    background-color:#4dabf7;
+
+}
+
+.w-grid-24{
+    width:calc(100%/24)
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em){
+        .w-grid-4-m{
+        width:calc(100%/4)
+    }
+}
+
+@media screen and (min-width: 60em){
+    .w-grid-6-l{
+        width:calc(100%/6)
+    }
+}
+
+@media screen and (min-width: 77.5rem){
+    .w-grid-20-xl{
+        width:calc(100%/20)
+    }
+}
